@@ -1,5 +1,5 @@
-//Declares variable
-var myVar
+//Declares a variable
+var myVar;
 //Assigns a floating point number value to the variable
 var myVar = 0.7;
 
@@ -22,10 +22,10 @@ var numB = 27;
 //Addition in js is done with the + symbol
 var sumOfAandB = numA + numB;
 
-//This reassigns the value of numA variable to 32, and does not affect the value of sumOfAandB because it is after that variable because js reads from top to bottom. Therefore, sumOfAandB is still 41, but numAminusNumB is affected with the new value.
+//This reassigns the value of numA variable to 32, and does not affect the value of sumOfAandB because it is after that variable since js reads from top to bottom. Therefore, sumOfAandB is still 41, but numAminusNumB is affected with the new value.
 numA = 32;
 
-//Substraction
+//Subtraction
 var numAminusNumB = numA - numB;
 
 //Multiplication is done through an *
@@ -45,7 +45,7 @@ var myFullName = myName + " " + "Rahman";
 
 //This creates a variable and assigns it to be an object
 var me = {
-  //Bbjects are made of named key value pairs
+  //Objects are made of named key value pairs
   name: "Altafur Rahman",
   age: 22,
   isAwesome: true,
@@ -57,7 +57,7 @@ var me = {
 };
 
 //Properties on the me object would generally be accessed using dot notation
-//me.name would return Altafur Rahman, me.head.eyes woudl return 2
+//me.name would return Altafur Rahman, me.head.eyes would return 2
 
 console.log(me.age);
 
@@ -73,7 +73,7 @@ var myArr = [55, "Tiger", true, me];
 
 console.log(myArr[0]);
 
-var daysOfTheWeek = ["Sunday", "Monday", "Tuesday"]
+var daysOfTheWeek = ["Sunday", "Monday", "Tuesday"];
 
 //Objects can hold arrays as the value for properties
 //This adds a hobbies porperty to the me object and sets it to be an array so it can hold multiple values
@@ -103,14 +103,14 @@ sayHello();
 sayHelloTo("meee");
 
 //This function takes in an argument called named. This argument will be set to a value once the function is invoked
-//Variables created within a function are only available within that Function; this is called function scope
+//Variables created within a function are only available within that function; this is called function scope
 //Inside the function is an argument
 function sayHelloTo(name) {
   var message = "Welcome to JavaScript " + name + "!";
   console.log(message);
 }
 
-//When you are invoking the function you are using a parameter
+//When you are invoking the function, you can pass an argument to the function's parameter
 sayHelloTo("Bob Ross")
 sayHelloTo(myFullName);
 sayHelloTo();
